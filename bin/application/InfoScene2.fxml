@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="InfoScecne" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Functions">
+   <children>
+      <Label layoutX="131.0" layoutY="14.0" text="Шифр Цезаря">
+         <font>
+            <Font name="Times New Roman" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="RButton" layoutX="228.0" layoutY="590.0" mnemonicParsing="false" onAction="#NextScene2" text="→">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="LButton" layoutX="140.0" layoutY="590.0" mnemonicParsing="false" onAction="#PreviousScene2" text="←">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="51.0" text="3. Когда появился шифр Цезаря">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="71.0" prefHeight="434.0" prefWidth="388.0" text="Шифр Цезаря был придуман в древности, во времена римского императора Юлия Цезаря, который правил в 100-44 годах до нашей эры. Однако точная дата его появления неизвестна. Шифр Цезаря получил свое название в честь этого исторического деятеля из-за того, что он, по преданию, использовал этот метод для своей переписки.Применение шифра Цезаря позволяло Цезарю и его союзникам общаться в тайне, так как для расшифровки сообщений нужно было знать ключ - количество позиций сдвига букв в алфавите. Этот простой метод шифрования позволял создать эффективную систему защиты информации для того времени.С тех пор шифр Цезаря стал одним из самых известных и простых методов шифрования, который используется в обучении основам криптографии и информационной безопасности." wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="320.0" text="4.Алгоритм шифрования">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="343.0" prefHeight="230.0" prefWidth="388.0" text="Он основан на принципе сдвига букв в алфавите. Например, при использовании шифра Цезаря сдвиг на 3 позиции вправо приведет к следующей замене:Исходный алфавит: A B C D E F G H I J K L M N O P Q R S T U V W X Y ZЗашифрованный алфавит: D E F G H I J K L M N O P Q R S T U V W X Y Z A B CТаким образом, каждая буква исходного сообщения заменяется на букву, находящуюся на определенном расстоянии в алфавите. Например, слово &quot;HELLO&quot; при использовании шифра Цезаря с ключом 3 будет зашифровано как &quot;KHOOR&quot;." wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

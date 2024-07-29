@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="720.0" style="-fx-background-color: #ababab;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneClass3">
+   <children>
+      <Button fx:id="button1" alignment="CENTER" layoutX="14.0" layoutY="232.0" mnemonicParsing="false" onAction="#ENCRYPT" prefHeight="47.0" prefWidth="342.0" style="-fx-background-color: #e3e3e3;" stylesheets="@Background.css" text="Зашифровать">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" alignment="CENTER" layoutX="363.0" layoutY="232.0" mnemonicParsing="false" onAction="#DECRYPT" prefHeight="47.0" prefWidth="342.0" style="-fx-background-color: #e3e3e3;" stylesheets="@Background.css" text="Дешифровать">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textarea1" layoutX="13.0" layoutY="87.0" prefHeight="134.0" prefWidth="690.0" promptText="Введите сюда текст для зашифровки..." />
+      <TextArea fx:id="textarea2" layoutX="14.0" layoutY="294.0" prefHeight="104.0" prefWidth="690.0" promptText="Введите сюда текст для дешифровки..." />
+      <Text layoutX="293.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Азбука Морзе">
+         <font>
+            <Font name="Gabriola" size="30.0" />
+         </font>
+      </Text>
+      <MenuBar fx:id="mymenubar" prefHeight="20.0" prefWidth="720.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Шрифт">
+               <items>
+                  <MenuItem fx:id="cipher1" mnemonicParsing="false" onAction="#SwitchToScene1" text="Шифр Цезаря" />
+                  <MenuItem fx:id="cipher2" mnemonicParsing="false" onAction="#SwitchToScene2" text="Квадрат Виженера" />
+                  <MenuItem fx:id="cipher3" mnemonicParsing="false" onAction="#SwitchToScene3" text="Азбука Морзе" />
+                  <MenuItem fx:id="cipher4" mnemonicParsing="false" onAction="#SwitchToScene4" text="Квадрат Полибия" />
+                  <MenuItem fx:id="cipher5" mnemonicParsing="false" onAction="#SwitchToScene5" text="Машина Энигма" />
+                  <MenuItem fx:id="cipher6" mnemonicParsing="false" onAction="#SwitchToScene6" text="Шифр Хилла" />
+                  <MenuItem fx:id="cipher7" mnemonicParsing="false" onAction="#SwitchToScene7" text="Генерация раномных символов" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Изменить">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Экран" />
+                  <MenuItem mnemonicParsing="false" text="Сделать стандартное окно" />
+                  <MenuItem mnemonicParsing="false" text="Текст" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Настройки">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Сохранить результат" />
+                  <MenuItem mnemonicParsing="false" text="Калькулятор" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Помощь">
+               <items>
+                  <MenuItem fx:id="InfoCipher" mnemonicParsing="false" onAction="#AlertInfoCrypto" text="О шифрах и то как они работают" />
+                  <MenuItem mnemonicParsing="false" text="-----------------------" />
+                  <MenuItem fx:id="AboutProgram" mnemonicParsing="false" onAction="#InfoProgram" text="О приложении" />
+                  <MenuItem fx:id="AboutAuthor" mnemonicParsing="false" onAction="#InfoAuthor" text="Об авторе" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
